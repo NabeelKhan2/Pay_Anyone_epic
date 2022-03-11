@@ -11,7 +11,7 @@
     android:maxHeight="@dimen/_200sdp"
     app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="@dimen/_15sdp"
-    app:cardElevation="@dimen/_6sdp"
+    app:cardElevation="@dimen/_4sdp"
     app:layout_constraintTop_toTopOf="parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout

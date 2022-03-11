@@ -10,15 +10,16 @@ class ComponentPurpose(
     private val binding: ComponentPurposeBinding,
     private val list: List<Purpose>,
     private val action: ((Boolean) -> Unit)? = null,
-    text: String
+    text: String,
+    titleText: String
 ) {
     private var purposeAdapter = PurposeAdapter()
 
     init {
         setupRecyclerView()
-        setupSelectedData(list[0])
         showAndHideComponent()
         binding.tvPurpose.text = text
+        binding.tvLabel.text = titleText
     }
 
     private fun showAndHideComponent() {
@@ -48,12 +49,6 @@ class ComponentPurpose(
                     group3.visible()
                 }
             }
-        }
-    }
-
-    private fun setupSelectedData(initialData: Purpose) {
-        binding.apply {
-            tvLabel.text = initialData.purpose
         }
     }
 }

@@ -3,7 +3,6 @@ package com.o3interfaces.payanyonetask.ui.fragments.fragmentpay
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.o3interfaces.payanyonetask.R
 import com.o3interfaces.payanyonetask.data.AccountData
@@ -11,8 +10,8 @@ import com.o3interfaces.payanyonetask.databinding.FragmentPayBinding
 import com.o3interfaces.payanyonetask.ui.fragments.basefragment.ViewBindingFragment
 import com.o3interfaces.payanyonetask.ui.fragments.fragmentpayeeslist.PayeeViewModel
 import com.o3interfaces.payanyonetask.utils.*
-import com.o3interfaces.payanyonetask.utils.components.accountselect.ComponentAccountSelector
 import com.o3interfaces.payanyonetask.utils.components.ComponentPayTo
+import com.o3interfaces.payanyonetask.utils.components.accountselect.ComponentAccountSelector
 import com.o3interfaces.payanyonetask.utils.components.componentpurpose.ComponentPurpose
 
 
@@ -52,6 +51,7 @@ class FragmentPay : ViewBindingFragment<FragmentPayBinding>() {
             binding = binding.componentPurpose,
             list = viewModel.purposeList,
             text = getString(R.string.purpose),
+            titleText = getString(R.string.purpose_text),
             action = { isCollapsed ->
                 binding.groupRelation.visibility(isCollapsed)
             }
@@ -61,6 +61,7 @@ class FragmentPay : ViewBindingFragment<FragmentPayBinding>() {
             binding = binding.componentRelation,
             list = viewModel.relationList,
             text = getString(R.string.relation),
+            titleText = getString(R.string.relation_text),
             action = {
                 binding.groupPurpose.visibility(it)
             }

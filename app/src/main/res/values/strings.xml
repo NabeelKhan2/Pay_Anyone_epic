@@ -35,4 +35,6 @@
     <string name="accounts">Accounts</string>
     <string name="payments">Payments</string>
     <string name="favorites">Favorites</string>
+    <string name="purpose_text">Select Purpose</string>
+    <string name="relation_text">Select Relation</string>
 </resources>

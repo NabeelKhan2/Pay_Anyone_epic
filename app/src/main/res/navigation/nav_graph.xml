@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentPayeesList">
+
+    <fragment
+        android:id="@+id/fragmentPayeesList"
+        android:name="com.o3interfaces.payanyonetask.ui.fragments.fragmentpayeeslist.FragmentPayeesList"
+        android:label="fragment_payees_list"
+        tools:layout="@layout/fragment_payees_list" >
+        <action
+            android:id="@+id/action_fragmentPayeesList_to_fragmentPayeeDetail"
+            app:destination="@id/fragmentPayeeDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAmount"
+        android:name="com.o3interfaces.payanyonetask.ui.fragments.fragmentamount.FragmentAmount"
+        android:label="fragment_amount"
+        tools:layout="@layout/fragment_amount" >
+        <action
+            android:id="@+id/action_fragmentAmount_to_fragmentReviewPayment"
+            app:destination="@id/fragmentReviewPayment" />
+        <argument
+            android:name="payeeDetail"
+            app:argType="com.o3interfaces.payanyonetask.data.PayeeData" />
+        <argument
+            android:name="accountData"
+            app:argType="com.o3interfaces.payanyonetask.data.AccountData" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentReviewPayment"
+        android:name="com.o3interfaces.payanyonetask.ui.fragments.fragmentpaymentreview.FragmentReviewPayment"
+        android:label="fragment_review_payment"
+        tools:layout="@layout/fragment_review_payment" >
+        <argument
+            android:name="amount"
+            app:argType="string" />
+        <argument
+            android:name="senderData"
+            app:argType="com.o3interfaces.payanyonetask.data.AccountData" />
+        <argument
+            android:name="receiverData"
+            app:argType="com.o3interfaces.payanyonetask.data.PayeeData" />
+        <action
+            android:id="@+id/action_fragmentReviewPayment_to_fragmentPayeesList"
+            app:destination="@id/fragmentPayeesList"
+            app:popUpTo="@id/fragmentPayeesList"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPayeeDetail"
+        android:name="com.o3interfaces.payanyonetask.ui.fragments.fragmentpayeedetail.FragmentPayeeDetail"
+        android:label="fragment_payee_detail"
+        tools:layout="@layout/fragment_payee_detail" >
+        <argument
+            android:name="payeeDetail"
+            app:argType="com.o3interfaces.payanyonetask.data.PayeeData" />
+        <action
+            android:id="@+id/action_fragmentPayeeDetail_to_fragmentPay"
+            app:destination="@id/fragmentPay" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPay"
+        android:name="com.o3interfaces.payanyonetask.ui.fragments.fragmentpay.FragmentPay"
+        android:label="fragment_pay"
+        tools:layout="@layout/fragment_pay" >
+        <action
+            android:id="@+id/action_fragmentPay_to_fragmentAmount"
+            app:destination="@id/fragmentAmount" />
+        <argument
+            android:name="payeeDetail"
+            app:argType="com.o3interfaces.payanyonetask.data.PayeeData" />
+    </fragment>
+</navigation>

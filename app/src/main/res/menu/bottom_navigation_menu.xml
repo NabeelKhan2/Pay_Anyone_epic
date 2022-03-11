@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/accounts"
+        android:icon="@drawable/ic_accounts"/>
+
+    <item
+        android:id="@+id/miPayment"
+        android:title="@string/payments"
+        android:icon="@drawable/ic_payments" />
+
+    <item
+        android:title="@string/favorites"
+        android:icon="@drawable/ic_favourites"/>
+
+</menu>

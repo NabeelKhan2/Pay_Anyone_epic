@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.button.MaterialButton
 import com.o3interfaces.payanyonetask.R
@@ -84,6 +85,7 @@ fun Fragment.showBottomSheetDialog(
         val binding = PaymentSuccessDialogBinding.inflate(layoutInflater)
         dialog.setContentView(binding.root)
         dialog.behavior.isDraggable = false
+        dialog.behavior.state = BottomSheetBehavior.STATE_EXPANDED
         binding.apply {
             tvAmount.text = amount
             tvSenderName.text = senderName

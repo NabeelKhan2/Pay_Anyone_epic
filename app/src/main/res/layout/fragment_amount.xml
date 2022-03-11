@@ -20,6 +20,7 @@
         android:textColor="@color/woodsmoke"
         android:textColorHint="@color/woodsmoke"
         android:textSize="@dimen/_50ssp"
+        android:imeOptions="actionDone"
         android:layout_marginBottom="@dimen/_69sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

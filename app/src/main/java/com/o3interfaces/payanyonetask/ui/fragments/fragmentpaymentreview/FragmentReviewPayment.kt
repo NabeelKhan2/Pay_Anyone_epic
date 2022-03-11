@@ -53,7 +53,7 @@ class FragmentReviewPayment : ViewBindingFragment<FragmentReviewPaymentBinding>(
                         action = {
                             val action =
                                 FragmentReviewPaymentDirections.actionFragmentReviewPaymentToFragmentPayeesList()
-                            navigateWithAnimations(action)
+                            findNavController().navigate(action)
                         }
                     )
                 }

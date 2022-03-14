@@ -1,9 +1,8 @@
-package com.o3interfaces.payanyonetask.utils.components
+package com.o3interfaces.payanyonetask.utils.components.payeedetail
+import com.o3interfaces.payanyonetask.databinding.ComponentPayeeDetailBinding
 
-import com.o3interfaces.payanyonetask.databinding.ComponentCardViewBinding
-
-class CardViewComponent(
-    binding: ComponentCardViewBinding,
+class ComponentPayeeDetail(
+    binding: ComponentPayeeDetailBinding,
     private val icon: Int,
     private val name: String,
     private val accountNo: Long,

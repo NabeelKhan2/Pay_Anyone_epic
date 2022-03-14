@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.o3interfaces.payanyonetask.data.Purpose
-import com.o3interfaces.payanyonetask.databinding.ItemSingleLineBinding
+import com.o3interfaces.payanyonetask.databinding.ItemPurposeBinding
 
 class PurposeAdapter : RecyclerView.Adapter<PurposeAdapter.AccountViewHolder>() {
 
@@ -28,7 +28,7 @@ class PurposeAdapter : RecyclerView.Adapter<PurposeAdapter.AccountViewHolder>() 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AccountViewHolder {
         val binding =
-            ItemSingleLineBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            ItemPurposeBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return AccountViewHolder(binding)
     }
 
@@ -42,7 +42,7 @@ class PurposeAdapter : RecyclerView.Adapter<PurposeAdapter.AccountViewHolder>() 
 
     var onItemClick: ((Purpose) -> Unit)? = null
 
-    inner class AccountViewHolder(private val binding: ItemSingleLineBinding) :
+    inner class AccountViewHolder(private val binding: ItemPurposeBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: Purpose) {

@@ -38,6 +38,7 @@
         android:layout_marginStart="@dimen/_11sdp"
         android:layout_marginEnd="@dimen/_11sdp"
         android:orientation="horizontal"
+        android:nestedScrollingEnabled="false"
         android:paddingTop="@dimen/_1sdp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="@id/guideline3"

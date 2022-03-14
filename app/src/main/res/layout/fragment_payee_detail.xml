@@ -7,7 +7,7 @@
 
     <include
         android:id="@+id/cardView"
-        layout="@layout/component_card_view" />
+        layout="@layout/component_payee_detail" />
 
     <include
         android:id="@+id/componentBtnPay"

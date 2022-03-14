@@ -1,4 +1,4 @@
-package com.o3interfaces.payanyonetask.utils.components
+package com.o3interfaces.payanyonetask.utils.components.payto
 
 import com.o3interfaces.payanyonetask.databinding.ComponentPayToBinding
 
@@ -17,5 +17,4 @@ class ComponentPayTo(
             tvAccountNum.text = accountNo.toString()
         }
     }
-
 }

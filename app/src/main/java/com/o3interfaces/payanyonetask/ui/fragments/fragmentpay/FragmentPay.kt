@@ -10,7 +10,7 @@ import com.o3interfaces.payanyonetask.databinding.FragmentPayBinding
 import com.o3interfaces.payanyonetask.ui.fragments.basefragment.ViewBindingFragment
 import com.o3interfaces.payanyonetask.ui.fragments.fragmentpayeeslist.PayeeViewModel
 import com.o3interfaces.payanyonetask.utils.*
-import com.o3interfaces.payanyonetask.utils.components.ComponentPayTo
+import com.o3interfaces.payanyonetask.utils.components.payto.ComponentPayTo
 import com.o3interfaces.payanyonetask.utils.components.accountselect.ComponentAccountSelector
 import com.o3interfaces.payanyonetask.utils.components.componentpurpose.ComponentPurpose
 

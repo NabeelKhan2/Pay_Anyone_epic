@@ -2,14 +2,13 @@ package com.o3interfaces.payanyonetask.ui.fragments.fragmentpayeedetail
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.o3interfaces.payanyonetask.R
 import com.o3interfaces.payanyonetask.databinding.FragmentPayeeDetailBinding
 import com.o3interfaces.payanyonetask.ui.fragments.basefragment.ViewBindingFragment
 import com.o3interfaces.payanyonetask.utils.bottomNavigationVisibility
 import com.o3interfaces.payanyonetask.utils.changeView
-import com.o3interfaces.payanyonetask.utils.components.CardViewComponent
+import com.o3interfaces.payanyonetask.utils.components.payeedetail.ComponentPayeeDetail
 import com.o3interfaces.payanyonetask.utils.headerButtonVisiblity
 import com.o3interfaces.payanyonetask.utils.navigateWithAnimations
 
@@ -23,7 +22,7 @@ class FragmentPayeeDetail : ViewBindingFragment<FragmentPayeeDetailBinding>() {
     override fun setup() {
 
         args.payeeDetail.apply {
-            CardViewComponent(
+            ComponentPayeeDetail(
                 binding = binding.cardView,
                 icon = image,
                 name = name,

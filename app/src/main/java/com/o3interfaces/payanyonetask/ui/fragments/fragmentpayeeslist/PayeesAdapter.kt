@@ -58,7 +58,7 @@ class PayeesAdapter : RecyclerView.Adapter<PayeesAdapter.PayeesViewHolder>() {
                         FragmentPayeesListDirections.actionFragmentPayeesListToFragmentPayeeDetail(
                             item
                         )
-                    navigate(binding.root.findNavController() , action)
+                    navigate(binding.root.findNavController(), action)
                 }
             }
         }

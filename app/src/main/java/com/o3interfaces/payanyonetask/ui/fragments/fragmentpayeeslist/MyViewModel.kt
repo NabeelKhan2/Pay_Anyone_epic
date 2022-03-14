@@ -6,7 +6,7 @@ import com.o3interfaces.payanyonetask.data.AccountData
 import com.o3interfaces.payanyonetask.data.PayeeData
 import com.o3interfaces.payanyonetask.data.Purpose
 
-class PayeeViewModel : ViewModel() {
+class MyViewModel : ViewModel() {
 
     val data: MutableList<PayeeData> =
         mutableListOf(

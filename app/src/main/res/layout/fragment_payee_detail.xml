@@ -13,5 +13,4 @@
         android:id="@+id/componentBtnPay"
         layout="@layout/button_component" />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>

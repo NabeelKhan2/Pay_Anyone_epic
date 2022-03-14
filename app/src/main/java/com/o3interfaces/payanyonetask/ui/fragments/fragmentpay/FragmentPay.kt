@@ -8,20 +8,21 @@ import com.o3interfaces.payanyonetask.R
 import com.o3interfaces.payanyonetask.data.AccountData
 import com.o3interfaces.payanyonetask.databinding.FragmentPayBinding
 import com.o3interfaces.payanyonetask.ui.fragments.basefragment.ViewBindingFragment
-import com.o3interfaces.payanyonetask.ui.fragments.fragmentpayeeslist.PayeeViewModel
+import com.o3interfaces.payanyonetask.ui.fragments.fragmentpayeeslist.MyViewModel
 import com.o3interfaces.payanyonetask.utils.*
-import com.o3interfaces.payanyonetask.utils.components.payto.ComponentPayTo
 import com.o3interfaces.payanyonetask.utils.components.accountselect.ComponentAccountSelector
 import com.o3interfaces.payanyonetask.utils.components.componentpurpose.ComponentPurpose
+import com.o3interfaces.payanyonetask.utils.components.payto.ComponentPayTo
 
 
 class FragmentPay : ViewBindingFragment<FragmentPayBinding>() {
     override val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> FragmentPayBinding =
         FragmentPayBinding::inflate
 
-    private val viewModel by viewModels<PayeeViewModel>()
+    private val viewModel by viewModels<MyViewModel>()
     private val args by navArgs<FragmentPayArgs>()
     private var accountData: AccountData? = null
+
     override fun setup() {
 
         changeView(getString(R.string.pay), getString(R.string.pay_from))

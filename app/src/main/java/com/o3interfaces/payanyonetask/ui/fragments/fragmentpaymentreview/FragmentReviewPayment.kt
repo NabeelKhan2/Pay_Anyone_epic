@@ -18,6 +18,7 @@ class FragmentReviewPayment : ViewBindingFragment<FragmentReviewPaymentBinding>(
     override val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> FragmentReviewPaymentBinding
         get() = FragmentReviewPaymentBinding::inflate
 
+
     @SuppressLint("SetTextI18n")
     override fun setup() {
 

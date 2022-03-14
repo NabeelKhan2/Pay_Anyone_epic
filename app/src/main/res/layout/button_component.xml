@@ -9,8 +9,6 @@
     android:layout_marginBottom="@dimen/_15sdp"
     app:layout_constraintBottom_toBottomOf="parent">
 
-
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnPay"
         android:layout_width="0dp"

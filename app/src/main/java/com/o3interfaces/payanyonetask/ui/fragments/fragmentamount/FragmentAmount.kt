@@ -3,7 +3,6 @@ package com.o3interfaces.payanyonetask.ui.fragments.fragmentamount
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.o3interfaces.payanyonetask.R
 import com.o3interfaces.payanyonetask.databinding.FragmentAmountBinding

@@ -16,7 +16,7 @@ class FragmentPayeesList : ViewBindingFragment<FragmentPayeesListBinding>() {
         FragmentPayeesListBinding::inflate
 
     private val groupsAdapter = PayeesAdapter()
-    private val viewModel by viewModels<PayeeViewModel>()
+    private val viewModel by viewModels<MyViewModel>()
 
 
     override fun setup() {
